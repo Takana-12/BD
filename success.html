@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hbd.css">
+  <style>
+    body {
+      font-size:1vw;
+      overflow: hidden;
+      background: linear-gradient(to top, #ffe0e6, #fffaf0);
+    }
+
+    .balloon {
+      width: 40px;
+      height: 60px;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: absolute;
+      bottom: -100px;
+      animation: floatUp 6s ease-in infinite;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .messageContainer {
+      height:auto;
+      width: 70%;
+      text-align:center;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(1.1);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="confetti-container"></div>
+    <div class = "messageContainer">
+      <h1>完全クリアー！</h1>
+      <h1>楽しんでくれたかな？それともなんやこのめんどい人はーみたいな感じかな笑</h1>
+      <h1>けど解いてくれてありがとう、お誕生日おめでとう！</h1>
+      <br>
+      <h1>それでなんだけど5/18に会いたい！</h1>
+      <h1>どうかな、お返事きかせて！</h1>
+    </div>
+  <script src="success.js"></script>
+
+  <script>
+    /*
+    function randomColor() {
+      const colors = ['#ffc1cc', '#f9d5e5', '#ffb6b9', '#fcd5ce', '#f8c8dc', '#ffdfd3'];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function createBalloon() {
+      const balloon = document.createElement('div');
+      balloon.className = 'balloon';
+      balloon.style.left = Math.random() * 100 + 'vw';
+      balloon.style.backgroundColor = randomColor();
+      balloon.style.animationDuration = (4 + Math.random() * 3) + 's';
+      document.body.appendChild(balloon);
+
+      setTimeout(() => {
+        balloon.remove();
+      }, 7000);
+    }
+
+    setInterval(createBalloon, 300);
+    */
+  </script>
+</body>
+</html>
